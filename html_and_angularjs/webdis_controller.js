@@ -1,3 +1,6 @@
+// AngularJS + Webdis + Redis
+// See https://github.com/adamgoose/angular-webdis
+
 // Create app, include dependencies.
 var app = angular.module("myApp", ['adamgoose.webdis']);
 
