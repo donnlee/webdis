@@ -1,7 +1,6 @@
 {
-	"redis_host":	"127.0.0.1",
-
-	"redis_port":	6379,
+	"redis_host":	"{{ REDIS_SERVER_IP }}",
+	"redis_port":	{{ REDIS_SERVER_PORT }},
 	"redis_auth":	null,
 
 	"http_host":	"0.0.0.0",
