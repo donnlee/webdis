@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<!-- No url routing needed yet. -->
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script> -->
+
+<!-- Load github dependency (downloaded manually and stored in same subdir) -->
+<script src="angular-webdis.js"></script>
+
+<!-- Load this app's controller. -->
+<script src="webdis_controller.js"></script>
+
+
+<!-- Simple app just displays the most-recent redis message published by the redis server. -->
+<div ng-app="myApp" ng-controller="myController">
+	<div>Redis channel: {{redisChannel}}</div>
+	<div>{{message}}</div>
+</div>
+
+</body>
+</html>
