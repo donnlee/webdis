@@ -3,6 +3,8 @@ Run webdis server in docker container.
 
 Includes a redis-server running in this container.
 
+Get angular-webdis.js here: https://github.com/adamgoose/angular-webdis
+
 Run with env vars set to match your redis server:
 ```
 REDIS_SERVER_IP
