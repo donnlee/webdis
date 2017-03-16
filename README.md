@@ -16,3 +16,8 @@ Example: To test with the (non-persistent) redis-server running inside this cont
 REDIS_SERVER_IP=127.0.0.1
 REDIS_SERVER_PORT=6379
 ```
+
+Example:
+```
+docker run -e REDIS_SERVER_IP=10.1.1.1 -e REDIS_SERVER_PORT=6379 <...>
+```
