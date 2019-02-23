@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:bionic
 MAINTAINER Donn Lee <docker.build@pluza.com>
 
 RUN apt-get update -y
@@ -29,7 +29,8 @@ ADD config/webdis.donn.json.tpl /etc/webdis.donn.json.tpl
 ADD run.sh /root/run.sh
 RUN chmod +x /root/run.sh
 
+ADD config/redis.conf /etc/redis/redis.conf
+
 CMD ["/root/run.sh"]
 
-EXPOSE 22 7379
-
+EXPOSE 22 6379 7379
